@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muzi.quitsmoking.mapper.CommunityPostMapper">
+
+    <resultMap id="BaseResultMap" type="com.muzi.quitsmoking.model.entity.CommunityPost">
+            <id property="post_id" column="post_id" />
+            <result property="user_id" column="user_id" />
+            <result property="group_id" column="group_id" />
+            <result property="title" column="title" />
+            <result property="content" column="content" />
+            <result property="post_type" column="post_type" />
+            <result property="status" column="status" />
+            <result property="view_count" column="view_count" />
+            <result property="like_count" column="like_count" />
+            <result property="comment_count" column="comment_count" />
+            <result property="is_anonymous" column="is_anonymous" />
+            <result property="created_at" column="created_at" />
+            <result property="updated_at" column="updated_at" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        post_id,user_id,group_id,title,content,post_type,
+        status,view_count,like_count,comment_count,is_anonymous,
+        created_at,updated_at
+    </sql>
+</mapper>

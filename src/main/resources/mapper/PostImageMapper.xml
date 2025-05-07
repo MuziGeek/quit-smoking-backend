@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muzi.quitsmoking.mapper.PostImageMapper">
+
+    <resultMap id="BaseResultMap" type="com.muzi.quitsmoking.model.entity.PostImage">
+            <id property="image_id" column="image_id" />
+            <result property="post_id" column="post_id" />
+            <result property="image_url" column="image_url" />
+            <result property="width" column="width" />
+            <result property="height" column="height" />
+            <result property="order_num" column="order_num" />
+            <result property="created_at" column="created_at" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        image_id,post_id,image_url,width,height,order_num,
+        created_at
+    </sql>
+</mapper>

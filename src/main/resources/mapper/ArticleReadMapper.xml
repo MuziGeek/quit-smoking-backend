@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muzi.quitsmoking.mapper.ArticleReadMapper">
+
+    <resultMap id="BaseResultMap" type="com.muzi.quitsmoking.model.entity.ArticleRead">
+            <id property="read_id" column="read_id" />
+            <result property="article_id" column="article_id" />
+            <result property="user_id" column="user_id" />
+            <result property="read_time" column="read_time" />
+            <result property="is_liked" column="is_liked" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        read_id,article_id,user_id,read_time,is_liked
+    </sql>
+</mapper>

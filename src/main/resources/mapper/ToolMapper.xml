@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muzi.quitsmoking.mapper.ToolMapper">
+
+    <resultMap id="BaseResultMap" type="com.muzi.quitsmoking.model.entity.Tool">
+            <id property="tool_id" column="tool_id" />
+            <result property="name" column="name" />
+            <result property="description" column="description" />
+            <result property="icon" column="icon" />
+            <result property="type" column="type" />
+            <result property="content" column="content" />
+            <result property="order_num" column="order_num" />
+            <result property="status" column="status" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        tool_id,name,description,icon,type,content,
+        order_num,status
+    </sql>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muzi.quitsmoking.mapper.SystemConfigMapper">
+
+    <resultMap id="BaseResultMap" type="com.muzi.quitsmoking.model.entity.SystemConfig">
+            <id property="config_id" column="config_id" />
+            <result property="config_key" column="config_key" />
+            <result property="config_value" column="config_value" />
+            <result property="description" column="description" />
+            <result property="created_at" column="created_at" />
+            <result property="updated_at" column="updated_at" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        config_id,config_key,config_value,description,created_at,updated_at
+    </sql>
+</mapper>

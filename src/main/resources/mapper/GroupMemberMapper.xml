@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muzi.quitsmoking.mapper.GroupMemberMapper">
+
+    <resultMap id="BaseResultMap" type="com.muzi.quitsmoking.model.entity.GroupMember">
+            <id property="member_id" column="member_id" />
+            <result property="group_id" column="group_id" />
+            <result property="user_id" column="user_id" />
+            <result property="role" column="role" />
+            <result property="joined_at" column="joined_at" />
+            <result property="status" column="status" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        member_id,group_id,user_id,role,joined_at,status
+    </sql>
+</mapper>

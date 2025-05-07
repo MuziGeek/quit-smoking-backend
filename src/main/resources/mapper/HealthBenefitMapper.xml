@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muzi.quitsmoking.mapper.HealthBenefitMapper">
+
+    <resultMap id="BaseResultMap" type="com.muzi.quitsmoking.model.entity.HealthBenefit">
+            <id property="benefit_id" column="benefit_id" />
+            <result property="timeline_id" column="timeline_id" />
+            <result property="benefit_text" column="benefit_text" />
+            <result property="order_num" column="order_num" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        benefit_id,timeline_id,benefit_text,order_num
+    </sql>
+</mapper>
